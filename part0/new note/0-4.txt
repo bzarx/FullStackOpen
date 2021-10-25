@@ -1,5 +1,6 @@
 title noteCreation
 
+
 browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
 note over server: adding the new note to data.json there
 note over browser: redirected to notes page

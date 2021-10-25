@@ -1,5 +1,6 @@
 title noteCreation_SPA
 
+
 note over browser: triggering the submit event handler at the js code
 note over browser: pushing the new note to the list of notes and rerendring the page
 note over browser: send the new note to the server as JSON-string
