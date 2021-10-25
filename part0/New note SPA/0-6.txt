@@ -1,0 +1,7 @@
+title noteCreation_SPA
+
+note over browser: triggering the submit event handler at the js code
+note over browser: pushing the new note to the list of notes and rerendring the page
+note over browser: send the new note to the server as JSON-string
+browser->server: HTTP POST 201 https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+note over server: adding the new note to spa.json at the server without redirecting or reloading

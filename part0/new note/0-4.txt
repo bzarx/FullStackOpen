@@ -1,0 +1,15 @@
+title noteCreation
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+note over server: adding the new note to data.json there
+note over browser: redirected to notes page
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/notes
+server-->browser: HTML-code
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/main.css
+server-->browser: main.css code
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/main.js
+server-->browser: main.js code
+note over browser:executing the js code and requesting data from data.json
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/data.json
+server-->browser: JSON data
+note over browser: executing the event handler and the new notes from the data
